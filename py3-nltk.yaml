@@ -1,6 +1,6 @@
 package:
   name: py3-nltk
-  version: 3.8.2
+  version: "3.9"
   epoch: 0
   description: Natural Language Toolkit
   copyright:
@@ -39,7 +39,7 @@ pipeline:
   - uses: git-checkout
     with:
       repository: https://github.com/nltk/nltk
-      expected-commit: 0753ee5bb0096b4a4b3dd587e784ce07e7f34dab
+      expected-commit: 24936a2d0c2ef1f4eed22de30aa72754e4cc30e7
       tag: ${{package.version}}
 
   - name: Python Build
