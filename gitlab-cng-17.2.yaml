@@ -32,8 +32,8 @@ var-transforms:
 
 package:
   name: gitlab-cng-17.2
-  version: 17.2.1
-  epoch: 1
+  version: 17.2.2
+  epoch: 0
   description: Cloud Native container images per component of GitLab
   copyright:
     - license: MIT
@@ -63,7 +63,7 @@ pipeline:
     with:
       repository: https://gitlab.com/gitlab-org/build/CNG.git
       tag: v${{package.version}}
-      expected-commit: 7b7006df209c05f72b0fb5968c0bfb619d049d56
+      expected-commit: 3d3849617601ccacda5b3da42c5c3b6d3a38de8e
 
 data:
   # Used to create all of the *-scripts subpackages from the CNG repo.
