@@ -1,0 +1,12 @@
+[Unit]
+Description=GitHub MCP Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/github-mcp-server stdio
+Restart=on-failure
+Environment=GITHUB_PERSONAL_ACCESS_TOKEN=
+
+[Install]
+WantedBy=multi-user.target
