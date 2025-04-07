@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 1
+export DH_GOPKG = github.com/github/github-mcp-server
+export GOPROXY=https://proxy.golang.org,direct
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# Build the binary
+	cd cmd/github-mcp-server && go build -v -o github-mcp-server
+
+override_dh_auto_test:
+	# Skip tests during package build
+
+override_dh_auto_install:
+	# Install binary
+	install -D -m 0755 cmd/github-mcp-server/github-mcp-server $(CURDIR)/debian/github-mcp-server/usr/bin/github-mcp-server
+	
+	# Install systemd service
+	install -D -m 0644 debian/github-mcp-server.service $(CURDIR)/debian/github-mcp-server/lib/systemd/system/github-mcp-server.service
+	
+	# Create config directory and example file
+	install -d -m 0755 $(CURDIR)/debian/github-mcp-server/etc/github-mcp-server
+	install -m 0644 debian/config.json.example $(CURDIR)/debian/github-mcp-server/etc/github-mcp-server/
