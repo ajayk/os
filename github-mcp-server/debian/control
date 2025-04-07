@@ -1,0 +1,24 @@
+Source: github-mcp-server
+Section: devel
+Priority: optional
+Maintainer: AjayK <maintainer@example.com>
+Build-Depends: debhelper-compat (= 13), golang-go (>= 1.21), git
+Standards-Version: 4.6.0
+Homepage: https://github.com/github/github-mcp-server
+Rules-Requires-Root: no
+
+Package: github-mcp-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, docker.io (>= 20.10.0)
+Recommends: vscode
+Description: GitHub MCP (Model Context Protocol) Server
+ The GitHub MCP Server is a Model Context Protocol (MCP) server
+ that provides seamless integration with GitHub APIs, enabling
+ advanced automation and interaction capabilities for developers
+ and tools.
+ .
+ It can be used for:
+  * Automating GitHub workflows and processes
+  * Extracting and analyzing data from GitHub repositories
+  * Building AI powered tools and applications that interact with
+    GitHub's ecosystem
