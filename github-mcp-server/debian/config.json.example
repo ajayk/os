@@ -1,0 +1,16 @@
+{
+  "TOOL_ADD_ISSUE_COMMENT_DESCRIPTION": "Add a comment to an existing issue",
+  "TOOL_CREATE_BRANCH_DESCRIPTION": "Create a new branch in a GitHub repository",
+  "TOOL_CREATE_ISSUE_DESCRIPTION": "Create a new issue in a GitHub repository",
+  "TOOL_CREATE_OR_UPDATE_FILE_DESCRIPTION": "Create or update a single file in a GitHub repository",
+  "TOOL_CREATE_PULL_REQUEST_DESCRIPTION": "Create a new pull request in a GitHub repository",
+  "TOOL_GET_FILE_CONTENTS_DESCRIPTION": "Get the contents of a file or directory from a GitHub repository",
+  "TOOL_GET_ISSUE_DESCRIPTION": "Gets the contents of an issue within a repository",
+  "TOOL_GET_PULL_REQUEST_DESCRIPTION": "Get details of a specific pull request",
+  "TOOL_LIST_COMMITS_DESCRIPTION": "Get list of commits of a branch in a GitHub repository",
+  "TOOL_LIST_ISSUES_DESCRIPTION": "List issues in a GitHub repository with filtering options",
+  "TOOL_LIST_PULL_REQUESTS_DESCRIPTION": "List and filter repository pull requests",
+  "TOOL_SEARCH_CODE_DESCRIPTION": "Search for code across GitHub repositories",
+  "TOOL_SEARCH_ISSUES_DESCRIPTION": "Search for issues and pull requests across GitHub repositories",
+  "TOOL_SEARCH_REPOSITORIES_DESCRIPTION": "Search for GitHub repositories"
+}
