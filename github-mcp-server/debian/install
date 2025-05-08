@@ -1,0 +1,3 @@
+cmd/github-mcp-server/github-mcp-server usr/bin/
+debian/github-mcp-server.service lib/systemd/system/
+debian/config.json.example etc/github-mcp-server/
