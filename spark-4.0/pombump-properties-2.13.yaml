@@ -12,19 +12,19 @@ properties:
   - property: dnsjava.version
     value: "3.6.0"
   - property: jackson-databind.version
-    value: "2.12.7.1"
+    value: "2.18.2" # Updated to match Spark 4.0.0
   - property: jetty.version
-    value: "9.4.52.v20230823" # A stable, available Jetty version
+    value: "9.4.56.v20240826" # Updated to match Spark 4.0.0
   - property: json-smart.version
     value: "2.4.9"
   - property: nimbus-jose-jwt.version
     value: "9.37.2"
   - property: protobuf.version
-    value: "3.25.5"
+    value: "4.29.3" # Updated to match Spark 4.0.0
   - property: woodstox-core.version
     value: "5.4.0"
   - property: netty.version
-    value: "4.1.119.Final"
+    value: "4.1.119.Final" # Keep our higher version
   - property: netty-tcnative.version
     value: "2.0.70.Final"
   - property: zookeeper.version
@@ -33,3 +33,5 @@ properties:
     value: "10.14.2.0"
   - property: ivy.version
     value: "2.5.3"
+  - property: log4j.version
+    value: "2.24.3" # Added from Spark 4.0.0
